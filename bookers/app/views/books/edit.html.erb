@@ -1,0 +1,24 @@
+<div class=edit_body>
+  <%= flash[:notice] %>
+  <h1 class=main_edit_title>Editing Book</h1>
+<%# url:'パス','オプション' = インスタンス変数を通して指定したURLに対してオプション(デフォルトはget)を指示。%>
+<%# 今回の場合は、"/books/:id"に対して編集内容を"get"させる%>
+<%# routes.rbには"/books/id"のデータが更新されたら"updateアクションが起こる様に設定されている%>
+<%# updateアクションでは、DBにデータの更新後トップにリダイレクトするように指示%>
+  <%= form_with model:@book,url:"/books/#{@book.id}",local:true do |f| %>
+    <% if @book.errors.any? %>
+      <p><%= pluralize(@book.errors.count, "error") %> prohibited this product from being saved:</p>
+        <ul>
+          <% @book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+    <% end %>
+    <p class=edit_title>Title</p>
+    <%= f.text_field:title %>
+    <p class=edit_title>Body</p>
+    <%= f.text_area:body %>
+    <p><%= f.submit 'Update Book' %></p>
+  <% end %>
+  <br><%= link_to "Show",book_path(@book) %>|<%= link_to "Back","/books" %></br>
+</div>

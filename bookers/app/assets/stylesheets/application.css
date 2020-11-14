@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*  index_top.view*/
+
+.top_index_body{
+  margin-left:30px;
+  margin-top:25px;
+}
+
+.line1{
+  margin-left:40px;
+  margin-bottom:30px;
+  font-size:13px;
+}
+
+.line2{
+  margin-left:40px;
+  margin-bottom:30px;
+  font-size:13px;
+}
+
+.top_index_link{
+  margin-left:40px;
+  font-size:13px;
+}
+/*  index.view*/
+
+.all {
+margin-left:30px;
+margin-top:30px;
+}
+
+.title1{
+  font-size:25px;
+}
+
+.title2{
+  font-size:20px;
+}
+
+.th{
+  font-size:12px;
+  text-align: center;
+}
+
+.text{
+  padding:0px;
+  margin:0px;
+}
+
+.book_content{
+  font-size:14px;
+}
+
+/*  edit.view*/
+
+
+.main_edit_title
+{
+  font-size:26px;
+}
+.edit_body{
+  margin-left:20px;
+}
+
+.edit_title{
+  font-size:12px;
+  margin-bottom:0px;
+}
+
+.update_botton{
+  margin-top:0px;
+}
+
+/*  show.view*/
+
+.show_body{
+  margin-left:40px;
+  margin-top:30px;
+}
+
+.show_book_title{
+  margin-left:40px;
+  margin-bottom:30px;
+  font-size:14px;
+}
+
+.show_book_body{
+  margin-left:40px;
+  margin-top:30px;
+  font-size:14px;
+}
+
+.show_limk{
+  font-size:14px;
+}
